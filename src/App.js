@@ -66,7 +66,7 @@ function App() {
           <button type="button" className="app-store-cta">
             {/* Placeholder for App Store badge */}
             <img src="https://storage.googleapis.com/gemini-repo-pdp/gemini-tool-aot/img/240502_140029.352_4.png" alt="Download on the App Store" />
-          </a>
+          </button>
         </section>
       </main>
 
