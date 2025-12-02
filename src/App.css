@@ -1,38 +1,217 @@
+:root {
+  --primary-blue: #7cbedc;
+  --secondary-pink: #f8d7e2;
+  --accent-gold: #fde8cd;
+  --text-dark: #333;
+  --text-light: #fff;
+  --bg-light: #fff;
+  --bg-cream: #fefaf6;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}
+
 .App {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: var(--text-dark);
+}
+
+.nav-cta {
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-cta:hover {
+  background-color: #6aa8c7;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--bg-cream);
+  padding: 10rem 5% 5rem;
+  text-align: left;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2.5rem;
+}
+
+.primary-cta {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1.2rem 3rem;
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.primary-cta:hover {
+  background-color: #6aa8c7;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Features Section */
+.features-section {
+  padding: 6rem 5%;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 6rem;
+}
+
+.feature.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-text {
+  max-width: 500px;
+}
+
+.feature-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.feature-text p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.feature-visual img {
+  max-width: 450px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: var(--secondary-pink);
+  padding: 6rem 5%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.testimonial {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.testimonial blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 2rem;
+  border-left: 4px solid var(--primary-blue);
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.testimonial-author {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.testimonial-author cite {
+  font-weight: 600;
+}
+
+/* Final CTA Section */
+.final-cta-section {
+  padding: 6rem 5%;
+  text-align: center;
+  background-color: var(--accent-gold);
+}
+
+.final-cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.final-cta-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2.5rem;
+}
+
+.app-store-cta img {
+  height: 60px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 5%;
+  background-color: var(--bg-cream);
 }
