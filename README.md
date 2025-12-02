@@ -13,7 +13,8 @@ Install dependencies:
 npm install
 ```
 Start the development server:
-```
+
+```sh
 npm start
 ```
 The app runs at:
@@ -22,19 +23,19 @@ http://localhost:3000
 
 Changes are reloaded automatically.
 
-⸻
+---
 
-Building for Production
+## Building for Production
 
 Create the optimized build:
-```
+```sh
 npm run build
 ```
 The output is generated in the build/ directory.
 
-⸻
+---
 
-Deployment
+## Deployment
 
 Deployment is handled through GitHub Actions CI so the team can collaborate, while the Cloudflare Pages project itself is connected to the maintainer’s Cloudflare account.
 
@@ -48,23 +49,22 @@ The live domain is:
 
 https://tinymiracle.life
 
+---
 
-⸻
-
-GitHub Actions
+## GitHub Actions
 
 The repository includes an optional workflow under:
-```
+```sh
 .github/workflows/deploy.yml
 ```
 This workflow runs on every push to main and deploys the latest build to Cloudflare Pages using tokens stored in the repository secrets.
 
 Required repository secrets:
-	•	CLOUDFLARE_API_TOKEN
-	•	CLOUDFLARE_ACCOUNT_ID
-	•	CLOUDFLARE_PROJECT_NAME
+	- CLOUDFLARE_API_TOKEN
+	- CLOUDFLARE_ACCOUNT_ID
+	- CLOUDFLARE_PROJECT_NAME
 
-⸻
+---
 
 Available Scripts
 
