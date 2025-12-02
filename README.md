@@ -60,9 +60,12 @@ The repository includes an optional workflow under:
 This workflow runs on every push to main and deploys the latest build to Cloudflare Pages using tokens stored in the repository secrets.
 
 Required repository secrets:
-	- CLOUDFLARE_API_TOKEN
-	- CLOUDFLARE_ACCOUNT_ID
-	- CLOUDFLARE_PROJECT_NAME
+
+```sh
+CLOUDFLARE_API_TOKEN
+CLOUDFLARE_ACCOUNT_ID
+CLOUDFLARE_PROJECT_NAME
+```
 
 ---
 
