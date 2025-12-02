@@ -1,74 +1,75 @@
-<<<<<<< HEAD
 # tiny-web
-=======
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application built with Create React App and deployed using Cloudflare Pages.  
+Live site: https://tinymiracle.life
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Local Development
 
-### `npm start`
+Install dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```sh
+npm install
+```
+Start the development server:
+```
+npm start
+```
+The app runs at:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+http://localhost:3000
 
-### `npm test`
+Changes are reloaded automatically.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+⸻
 
-### `npm run build`
+Building for Production
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Create the optimized build:
+```
+npm run build
+```
+The output is generated in the build/ directory.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⸻
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Deployment
 
-### `npm run eject`
+Deployment is handled through GitHub Actions CI so the team can collaborate, while the Cloudflare Pages project itself is connected to the maintainer’s Cloudflare account.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The CI workflow builds the project and publishes the contents of the build/ directory to Cloudflare Pages.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Manual deployment (for maintainers only):
+```
+npx wrangler pages deploy ./build --project-name=tiny-web
+```
+The live domain is:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+https://tinymiracle.life
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+⸻
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+GitHub Actions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The repository includes an optional workflow under:
+```
+.github/workflows/deploy.yml
+```
+This workflow runs on every push to main and deploys the latest build to Cloudflare Pages using tokens stored in the repository secrets.
 
-### Code Splitting
+Required repository secrets:
+	•	CLOUDFLARE_API_TOKEN
+	•	CLOUDFLARE_ACCOUNT_ID
+	•	CLOUDFLARE_PROJECT_NAME
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+⸻
 
-### Analyzing the Bundle Size
+Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Additional scripts provided by Create React App:
+	•	npm test — run tests in watch mode
+	•	npm run eject — expose the underlying configuration (not reversible)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> c8a10de (Initialize project using Create React App)
+For more details, refer to the Create React App documentation.
