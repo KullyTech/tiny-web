@@ -7,13 +7,13 @@ function App() {
       <header className="hero-section">
         <nav className="navbar">
           <div className="logo">tiny</div>
-          <a href="javascript:void(0)" className="nav-cta">Download</a>
+          <button type="button" className="nav-cta">Download</button>
         </nav>
         <div className="hero-content">
           <div className="hero-text">
             <h1>Hear Your Baby's Heartbeat, Anytime, Anywhere.</h1>
             <p>Experience an intimate connection with your baby through crystal-clear audio of their heartbeat. Safe, secure, and ready whenever you are.</p>
-            <a href="javascript:void(0)" className="primary-cta">Try Tiny - Download for iOS</a>
+            <button type="button" className="primary-cta">Try Tiny - Download for iOS</button>
           </div>
           <div className="hero-image">
             {/* Placeholder for iPhone with app UI */}
@@ -63,7 +63,7 @@ function App() {
         <section className="final-cta-section">
           <h2>Start Your Journey Today</h2>
           <p>Download Tiny and begin a new chapter of connection with your baby.</p>
-          <a href="javascript:void(0)" className="app-store-cta">
+          <button type="button" className="app-store-cta">
             {/* Placeholder for App Store badge */}
             <img src="https://storage.googleapis.com/gemini-repo-pdp/gemini-tool-aot/img/240502_140029.352_4.png" alt="Download on the App Store" />
           </a>
