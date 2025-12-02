@@ -37,7 +37,7 @@ function App() {
           <div className="feature reverse">
             <div className="feature-text">
               <h2>Safe, Secure & Private</h2>
-              <p>Your moments are yours alone. Tiny is designed with the utmost respect for your privacy and security, ensuring a worry-free experience.</p>
+              <p>Your moments are yours alone mom. Tiny is designed with the utmost respect for your privacy and security, ensuring a worry-free experience.</p>
             </div>
             <div className="feature-visual">
               {/* Placeholder for security icon */}
