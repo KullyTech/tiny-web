@@ -1,13 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="App">
-      <header className="hero-section">
-        <nav className="navbar">
+      <header className="hero-section" id="hero">
+        <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
           <div className="logo">
             <img src="/tiny-logo.png" alt="Tiny Logo" className="navbar-logo" />
+          </div>
+          <div className="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#mia">Mia</a>
           </div>
           <button type="button" className="nav-cta">Download</button>
         </nav>
@@ -25,6 +47,7 @@ function App() {
       </header>
 
       <main>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <section className="features-section">
           <div className="feature">
@@ -52,6 +75,9 @@ function App() {
 =======
 >>>>>>> 222d570 (refactor: Update UI, remove sections, and fix styling issues)
         <section className="testimonials-section">
+=======
+        <section className="testimonials-section" id="mia">
+>>>>>>> 25310a4 (feat: Enhance navbar with scroll effect and navigation; update Mia section style)
           <h2>Mia</h2>
           <div className="testimonial">
             <blockquote>
