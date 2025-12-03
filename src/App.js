@@ -37,7 +37,6 @@ function App() {
           <div className="hero-text">
             <h1>
               Hear Your Baby's Heartbeat.
-              <img src="/app-icon.png" alt="Tiny App Icon" className="hero-headline-icon" />
             </h1>
             <p>Experience an intimate connection through crystal-clear audio.</p>
             <a href="https://testflight.apple.com/join/sHZ4FgyN" target="_blank" rel="noopener noreferrer" className="primary-cta">
