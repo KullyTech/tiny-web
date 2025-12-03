@@ -25,7 +25,7 @@ function App() {
       <header className="hero-section" id="hero">
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
           <div className="logo">
-            <img src="/tiny-logo.png" alt="Tiny Logo" className="navbar-logo" />
+            <img src="/app-icon.png" alt="Tiny Logo" className="navbar-logo" />
           </div>
           <div className="nav-links">
             <a href="#hero">Home</a>
