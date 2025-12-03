@@ -29,7 +29,7 @@ function App() {
           </div>
           <div className="nav-links">
             <a href="#hero">Home</a>
-            <a href="#mia">Stories</a>
+            <a href="#stories">Stories</a>
           </div>
           <a href="https://testflight.apple.com/join/sHZ4FgyN" target="_blank" rel="noopener noreferrer" className="nav-cta">Download</a>
         </nav>
@@ -54,7 +54,7 @@ function App() {
       </header>
 
       <main>
-        <section className="testimonials-section" id="mia">
+        <section className="testimonials-section" id="stories">
           <h2>What Moms Say</h2>
           <div className="testimonial">
             <blockquote>
