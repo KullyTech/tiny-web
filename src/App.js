@@ -40,6 +40,7 @@ function App() {
           </div>
           <div className="nav-links">
             <a href="#hero">Home</a>
+            <a href="#features">Features</a>
             <a href="#stories">Stories</a>
           </div>
           <a href="https://testflight.apple.com/join/sHZ4FgyN" target="_blank" rel="noopener noreferrer" className="nav-cta">Download</a>
@@ -63,7 +64,7 @@ function App() {
         </div>
       </header>
 
-      <section className="mockup-section">
+      <section className="mockup-section" id="features"> 
         <h2>Tiny using iPhone and AirPods to record baby's <span className="highlight-word">heartbeat</span> then transforming it into a precious shareable <span className="highlight-word">memory</span></h2>
         <div className="mockup-images">
           <img src="/mockup-face-front.png" alt="Tiny App Mockup Front" className="mockup-image-front" />
