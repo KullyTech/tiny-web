@@ -270,3 +270,100 @@ body {
   background-color: #000; /* Ensure footer matches body/hero */
   color: #fff; /* Ensure text is visible */
 }
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-blue);
+}
+
+/* Mockup Section */
+.mockup-section {
+  background-color: #000;
+  color: var(--text-light);
+  padding: 6rem 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.mockup-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.mockup-section h2 .highlight-word {
+  color: var(--primary-blue); /* Emphasize important words with primary blue */
+}
+
+.mockup-images {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.mockup-images img {
+  height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Take full width of its container (limited by max-width) */
+  object-fit: contain; /* Ensure full image is visible, scale down if needed */
+  object-position: center; /* Center the image within its box */
+  border-radius: 15px; /* Soften edges */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Add some depth */
+  transition: transform 0.3s ease;
+}
+
+.mockup-images img:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Individual mockup image sizing */
+.mockup-image-front {
+  max-width: 90%; /* Larger on mobile */
+}
+
+.mockup-image-diagonal {
+  max-width: 80%; /* Default for mobile (no change) */
+}
+
+@media (min-width: 768px) {
+  .mockup-section h2 {
+    font-size: 2.5rem;
+  }
+  .mockup-image-front {
+    max-width: 45%; /* Larger on medium screens */
+  }
+  .mockup-image-diagonal {
+    max-width: 35%; /* Two images side-by-side on medium screens (no change) */
+  }
+}
+
+@media (min-width: 1024px) {
+  .mockup-image-front {
+    max-width: 40%; /* Larger on large screens */
+  }
+  .mockup-image-diagonal {
+    max-width: 30%; /* Adjust for larger screens (no change) */
+  }
+}
+
