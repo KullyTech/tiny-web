@@ -98,7 +98,7 @@ body {
 .hero-section {
   background-color: #000;
   background-image: radial-gradient(circle at center, rgba(128, 0, 128, 0.5) 0%, rgba(0, 0, 0, 1) 70%);
-  padding: 10rem 5% 5rem;
+  padding: 120px 5% 2rem; /* Reduced padding to move content up */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -106,6 +106,12 @@ body {
   justify-content: center;
   min-height: 100vh;
   color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 100px; /* Further reduced for mobile */
+  }
 }
 
 .hero-content {
