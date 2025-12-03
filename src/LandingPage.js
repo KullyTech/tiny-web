@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './App.css'; // Assuming App.css contains styles for LandingPage
 
 function LandingPage() {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation(); // Get the location object from react-router-dom
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,13 +23,13 @@ function LandingPage() {
   }, []);
 
   useEffect(() => {
-    if (window.location.hash) {
-      const element = document.getElementById(window.location.hash.substring(1));
+    if (location.hash) { // Use location.hash instead of window.location.hash
+      const element = document.getElementById(location.hash.substring(1));
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
-  }, [window.location.hash]); // Rerun effect when hash changes
+  }, [location.hash]); // Rerun effect when hash changes (from react-router-dom)
 
 
   return (
