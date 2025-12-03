@@ -125,18 +125,20 @@ body {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+    align-items: center; /* Center items vertically */
   }
 
   .hero-text {
     text-align: left;
-    max-width: 50%;
+    max-width: 45%; /* Slightly reduced to give space to images */
     align-items: flex-start;
     display: flex;
     flex-direction: column;
   }
 
   .hero-image {
-    max-width: 45%;
+    max-width: 50%; /* Increased space for images */
+    align-items: flex-end; /* Align images to the right */
   }
 }
 
@@ -146,9 +148,9 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 3.5rem;
+  font-size: 4rem; /* Increased size */
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.1;
   margin-bottom: 1.5rem;
   color: var(--text-light);
 }
@@ -170,6 +172,10 @@ body {
   transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
+  display: inline-flex; /* Flexbox for icon alignment */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Space between icon and text */
 }
 
 .primary-cta:hover {
@@ -184,12 +190,12 @@ body {
 }
 
 .hero-image .tiny-logo {
-  max-width: 200px;
+  max-width: 350px; /* Increased size */
   height: auto;
 }
 
 .hero-image .timy-png {
-  max-width: 400px;
+  max-width: 600px; /* Increased size */
   height: auto;
 }
 
