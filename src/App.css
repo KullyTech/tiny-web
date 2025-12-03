@@ -140,6 +140,11 @@ body {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; /* Align hero text content to the start */
+  }
+
+  .hero-text h1 {
+    justify-content: flex-start; /* Align headline icon to the start on desktop */
   }
 
   .hero-image {
@@ -159,6 +164,16 @@ body {
   line-height: 1.1;
   margin-bottom: 1.5rem;
   color: var(--text-light);
+  display: flex; /* Enable flex for icon alignment */
+  align-items: center; /* Vertically align icon with text */
+  justify-content: center; /* Center text and icon on mobile */
+  flex-wrap: wrap; /* Allow icon/text to wrap if needed */
+}
+
+.hero-headline-icon {
+  height: 1em; /* Make icon height relative to font size */
+  width: auto;
+  margin-left: 0.5rem; /* Space between text and icon */
 }
 
 .hero-text p {
