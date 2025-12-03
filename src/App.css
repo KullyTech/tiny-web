@@ -1,5 +1,5 @@
 :root {
-  --primary-blue: #7cbedc;
+  --primary-blue: #9370DB; /* MediumPurple */
   --secondary-pink: #f8d7e2;
   --accent-gold: #fde8cd;
   --text-dark: #333;
@@ -56,7 +56,7 @@ body {
 }
 
 .nav-cta:hover {
-  background-color: #6aa8c7;
+  background-color: #7b68ee; /* MediumSlateBlue */
 }
 
 /* Hero Section */
@@ -117,7 +117,7 @@ body {
 }
 
 .primary-cta:hover {
-  background-color: #6aa8c7;
+  background-color: #7b68ee; /* MediumSlateBlue */
 }
 
 .hero-image {
