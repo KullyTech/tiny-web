@@ -77,12 +77,19 @@ function App() {
         <section className="testimonials-section">
 =======
         <section className="testimonials-section" id="mia">
+<<<<<<< HEAD
 >>>>>>> 25310a4 (feat: Enhance navbar with scroll effect and navigation; update Mia section style)
           <h2>Mia</h2>
+=======
+          <h2>What Moms Say</h2>
+>>>>>>> a2b60ab (fix: Improve hero layout visibility and update testimonial structure)
           <div className="testimonial">
             <blockquote>
               "perasaanya pas nyoba aplikasi nya deg-degan sebenernya karena jadi ikutan penasaran juga bakal bisa kedengeran ngga ya? dan pas kedengeran happy sih walaupun nyari nya ngga gampang"
             </blockquote>
+            <div className="testimonial-author">
+              <cite>- Mia</cite>
+            </div>
           </div>
         </section>
       </main>

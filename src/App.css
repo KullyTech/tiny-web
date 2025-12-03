@@ -115,8 +115,29 @@ body {
   justify-content: center;
   gap: 2rem;
   width: 100%;
-  max-width: none;
+  max-width: 1200px; /* Limit max width for large screens */
+  margin: 0 auto; /* Center the content */
   text-align: center;
+}
+
+@media (min-width: 900px) {
+  .hero-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .hero-text {
+    text-align: left;
+    max-width: 50%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    max-width: 45%;
+  }
 }
 
 .hero-text {
@@ -197,10 +218,22 @@ body {
   font-style: italic;
   line-height: 1.6;
   color: #ddd; /* Lighter grey for readability */
-  margin: 0 0 2rem;
+  margin: 0 0 1rem; /* Reduced margin */
   border-left: 4px solid var(--primary-blue);
   padding-left: 2rem;
   text-align: left;
+}
+
+.testimonial-author {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.testimonial-author cite {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--primary-blue);
 }
 
 /* Footer */
