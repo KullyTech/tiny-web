@@ -220,7 +220,96 @@ body {
   height: auto;
 }
 
-/* Testimonials Section */
+/* Team Section Styles */
+.teams-page {
+  padding-top: 80px; /* Adjusted padding-top to align content better with navbar */
+  background-color: #000;
+  color: var(--text-light);
+  min-height: 100vh;
+}
+
+.teams-page .hero-section {
+  min-height: unset; /* Remove min-height for teams page hero to prevent initial scroll */
+  padding-top: 2rem; /* Adjust padding for a more compact hero on teams page */
+  padding-bottom: 2rem;
+}
+
+.teams-page .hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.teams-page .hero-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.team-members-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default to 1 column on small screens */
+  gap: 2rem;
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: radial-gradient(circle at center, rgba(147, 112, 219, 0.1) 0%, rgba(0, 0, 0, 0) 70%); /* Subtle radial gradient for consistency */
+}
+
+@media (min-width: 768px) {
+  .team-members-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-members-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+  }
+}
+
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Vertically center content */
+  min-height: 300px; /* Ensure consistent card height */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: scale(1.05); /* Subtle zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* More subtle, depth-oriented shadow */
+}
+
+.team-member-image {
+  max-width: 100%; /* Ensure image is responsive within its container */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 0.5rem; /* Add a small margin below the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for visibility */
+}
+
+.social-links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin-icon {
+  color: var(--primary-blue); /* LinkedIn blue or primary blue from theme */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.linkedin-icon:hover {
+  transform: scale(1.2);
+  color: var(--text-light); /* Changed to white on hover */
+}
+
+.linkedin-icon svg {
+  width: 28px; /* Size of the SVG icon */
+  height: 28px;
+}
+
 .testimonials-section {
   background-color: #000; /* Match dark theme */
   padding: 6rem 5%;
