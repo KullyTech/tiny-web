@@ -54,42 +54,8 @@ function App() {
       </header>
 
       <main>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <section className="features-section">
-          <div className="feature">
-            <div className="feature-text">
-              <h2>Crystal-Clear Sound</h2>
-              <p>Our advanced technology provides a high-fidelity audio experience, allowing you to hear every precious beat with clarity.</p>
-            </div>
-            <div className="feature-visual">
-              {/* Placeholder for waveform visual */}
-              <img src="https://storage.googleapis.com/gemini-repo-pdp/gemini-tool-aot/img/240502_140029.352_1.png" alt="Sound waveform" />
-            </div>
-          </div>
-          <div className="feature reverse">
-            <div className="feature-text">
-              <h2>Safe, Secure & Private</h2>
-              <p>Your moments are yours alone mom. Tiny is designed with the utmost respect for your privacy and security, ensuring a worry-free experience.</p>
-            </div>
-            <div className="feature-visual">
-              {/* Placeholder for security icon */}
-              <img src="https://storage.googleapis.com/gemini-repo-pdp/gemini-tool-aot/img/240502_140029.352_2.png" alt="Security icon" />
-            </div>
-          </div>
-        </section>
-
-=======
->>>>>>> 222d570 (refactor: Update UI, remove sections, and fix styling issues)
-        <section className="testimonials-section">
-=======
         <section className="testimonials-section" id="mia">
-<<<<<<< HEAD
->>>>>>> 25310a4 (feat: Enhance navbar with scroll effect and navigation; update Mia section style)
-          <h2>Mia</h2>
-=======
           <h2>What Moms Say</h2>
->>>>>>> a2b60ab (fix: Improve hero layout visibility and update testimonial structure)
           <div className="testimonial">
             <blockquote>
               "I was nervous at first, wondering if I'd really hear it. But when I found that little heartbeat, the joy was overwhelming. It takes a little patience, but the moment is absolutely magical."
