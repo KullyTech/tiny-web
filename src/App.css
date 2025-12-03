@@ -10,7 +10,7 @@
 body {
   font-family: 'Inter', sans-serif;
   color: var(--text-dark);
-  background-color: var(--bg-light);
+  background-color: #000; /* Set global background to black for seamless overflow */
 }
 
 .App {
@@ -29,23 +29,30 @@ body {
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: transparent; /* Make navbar background transparent */
+  background-color: transparent;
 }
 
 .logo {
-  font-weight: 800;
-  font-size: 1.8rem;
-  color: var(--text-light);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust logo size */
+  width: auto;
 }
 
 .nav-cta {
+  font-size: 1rem; /* Slightly smaller than hero button for navbar */
   font-weight: 600;
-  padding: 0.8rem 1.8rem;
+  padding: 1rem 2rem; /* Match style but slightly smaller */
   background-color: var(--primary-blue);
   color: var(--text-light);
   border-radius: 50px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .nav-cta:hover {
@@ -57,28 +64,28 @@ body {
   background-color: #000;
   background-image: radial-gradient(circle at center, rgba(128, 0, 128, 0.5) 0%, rgba(0, 0, 0, 1) 70%);
   padding: 10rem 5% 5rem;
-  text-align: center; /* Center content within hero section */
-  display: flex; /* Use flexbox for centering */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  min-height: 100vh; /* Ensure it takes full viewport height */
-  color: var(--text-light); /* Set text color to light for dark background */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--text-light);
 }
 
 .hero-content {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  gap: 2rem; /* Reduced gap between elements */
-  width: 100%; /* Allow content to take full width */
-  max-width: none; /* Remove previous max-width constraint */
-  text-align: center; /* Center text content */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: none;
+  text-align: center;
 }
 
 .hero-text {
-  max-width: 600px; /* Adjust max-width for better readability */
+  max-width: 600px;
   text-align: center;
 }
 
@@ -87,70 +94,47 @@ body {
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  color: var(--text-light); /* Ensure text is visible on dark background */
+  color: var(--text-light);
 }
 
 .hero-text p {
   font-size: 1.2rem;
-  color: #ccc; /* Lighter color for readability on dark background */
+  color: #ccc;
   margin-bottom: 2.5rem;
+}
+
+.primary-cta {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1.2rem 3rem;
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-cta:hover {
+  background-color: #6aa8c7;
 }
 
 .hero-image {
   display: flex;
-  flex-direction: column; /* Stack images vertically */
-  align-items: center; /* Center images horizontally */
-  gap: 1rem; /* Space between the two images */
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .hero-image .tiny-logo {
-  max-width: 200px; /* Adjust size as needed */
+  max-width: 200px;
   height: auto;
-  border-radius: 0; /* Remove border-radius if not needed */
-  box-shadow: none; /* Remove shadow if not needed */
 }
 
 .hero-image .timy-png {
-  max-width: 400px; /* Adjust size as needed */
+  max-width: 400px;
   height: auto;
-  border-radius: 0; /* Remove border-radius if not needed */
-  box-shadow: none; /* Remove shadow if not needed */
-}
-
-/* Features Section */
-.features-section {
-  padding: 6rem 5%;
-}
-
-.feature {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4rem;
-  margin-bottom: 6rem;
-}
-
-.feature.reverse {
-  flex-direction: row-reverse;
-}
-
-.feature-text {
-  max-width: 500px;
-}
-
-.feature-text h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-
-.feature-text p {
-  font-size: 1.1rem;
-  color: #666;
-}
-
-.feature-visual img {
-  max-width: 450px;
 }
 
 /* Testimonials Section */
@@ -182,49 +166,10 @@ body {
   text-align: left;
 }
 
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.testimonial-author img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 1rem;
-}
-
-.testimonial-author cite {
-  font-weight: 600;
-}
-
-/* Final CTA Section */
-.final-cta-section {
-  padding: 6rem 5%;
-  text-align: center;
-  background-color: var(--accent-gold);
-}
-
-.final-cta-section h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-
-.final-cta-section p {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 2.5rem;
-}
-
-.app-store-cta img {
-  height: 60px;
-}
-
 /* Footer */
 .footer {
   text-align: center;
   padding: 2rem 5%;
-  background-color: black;
+  background-color: #000; /* Ensure footer matches body/hero */
+  color: #fff; /* Ensure text is visible */
 }

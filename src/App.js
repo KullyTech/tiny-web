@@ -6,7 +6,9 @@ function App() {
     <div className="App">
       <header className="hero-section">
         <nav className="navbar">
-          <div className="logo">tiny</div>
+          <div className="logo">
+            <img src="/tiny-logo.png" alt="Tiny Logo" className="navbar-logo" />
+          </div>
           <button type="button" className="nav-cta">Download</button>
         </nav>
         <div className="hero-content">
@@ -23,6 +25,7 @@ function App() {
       </header>
 
       <main>
+<<<<<<< HEAD
         <section className="features-section">
           <div className="feature">
             <div className="feature-text">
@@ -46,27 +49,15 @@ function App() {
           </div>
         </section>
 
+=======
+>>>>>>> 222d570 (refactor: Update UI, remove sections, and fix styling issues)
         <section className="testimonials-section">
-          <h2>Loved by Parents Like You</h2>
+          <h2>Mia</h2>
           <div className="testimonial">
             <blockquote>
-              "Using Tiny has been such a magical experience. Hearing our baby's heartbeat at home brought us so much peace and joy. It's a must-have for any expectant parent."
+              "perasaanya pas nyoba aplikasi nya deg-degan sebenernya karena jadi ikutan penasaran juga bakal bisa kedengeran ngga ya? dan pas kedengeran happy sih walaupun nyari nya ngga gampang"
             </blockquote>
-            <div className="testimonial-author">
-              {/* Placeholder for author image */}
-              <img src="https://storage.googleapis.com/gemini-repo-pdp/gemini-tool-aot/img/240502_140029.352_3.png" alt="Parent" />
-              <cite>- Sarah & Tom</cite>
-            </div>
           </div>
-        </section>
-
-        <section className="final-cta-section">
-          <h2>Start Your Journey Today</h2>
-          <p>Download Tiny and begin a new chapter of connection with your baby.</p>
-          <button type="button" className="app-store-cta">
-            {/* Placeholder for App Store badge */}
-            <img src="https://storage.googleapis.com/gemini-repo-pdp/gemini-tool-aot/img/240502_140029.352_4.png" alt="Download on the App Store" />
-          </button>
         </section>
       </main>
 
