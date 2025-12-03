@@ -5,7 +5,6 @@
   --text-dark: #333;
   --text-light: #fff;
   --bg-light: #fff;
-  --bg-cream: #fefaf6;
 }
 
 body {
@@ -30,12 +29,13 @@ body {
   left: 0;
   right: 0;
   z-index: 10;
+  background-color: transparent; /* Make navbar background transparent */
 }
 
 .logo {
   font-weight: 800;
   font-size: 1.8rem;
-  color: var(--text-dark);
+  color: var(--text-light);
 }
 
 .nav-cta {
@@ -54,20 +54,32 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background-color: var(--bg-cream);
+  background-color: #000;
+  background-image: radial-gradient(circle at center, rgba(128, 0, 128, 0.5) 0%, rgba(0, 0, 0, 1) 70%);
   padding: 10rem 5% 5rem;
-  text-align: left;
+  text-align: center; /* Center content within hero section */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh; /* Ensure it takes full viewport height */
+  color: var(--text-light); /* Set text color to light for dark background */
 }
 
 .hero-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4rem;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  gap: 2rem; /* Reduced gap between elements */
+  width: 100%; /* Allow content to take full width */
+  max-width: none; /* Remove previous max-width constraint */
+  text-align: center; /* Center text content */
 }
 
 .hero-text {
-  max-width: 500px;
+  max-width: 600px; /* Adjust max-width for better readability */
+  text-align: center;
 }
 
 .hero-text h1 {
@@ -75,33 +87,34 @@ body {
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: var(--text-light); /* Ensure text is visible on dark background */
 }
 
 .hero-text p {
   font-size: 1.2rem;
-  color: #666;
+  color: #ccc; /* Lighter color for readability on dark background */
   margin-bottom: 2.5rem;
 }
 
-.primary-cta {
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 1.2rem 3rem;
-  background-color: var(--primary-blue);
-  color: var(--text-light);
-  border-radius: 50px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+.hero-image {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center; /* Center images horizontally */
+  gap: 1rem; /* Space between the two images */
 }
 
-.primary-cta:hover {
-  background-color: #6aa8c7;
+.hero-image .tiny-logo {
+  max-width: 200px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 0; /* Remove border-radius if not needed */
+  box-shadow: none; /* Remove shadow if not needed */
 }
 
-.hero-image img {
-  max-width: 400px;
-  border-radius: 30px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+.hero-image .timy-png {
+  max-width: 400px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 0; /* Remove border-radius if not needed */
+  box-shadow: none; /* Remove shadow if not needed */
 }
 
 /* Features Section */
@@ -213,5 +226,5 @@ body {
 .footer {
   text-align: center;
   padding: 2rem 5%;
-  background-color: var(--bg-cream);
+  background-color: black;
 }

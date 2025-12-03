@@ -16,8 +16,8 @@ function App() {
             <button type="button" className="primary-cta">Try Tiny - Download for iOS</button>
           </div>
           <div className="hero-image">
-            {/* Placeholder for iPhone with app UI */}
-            <img src="https://storage.googleapis.com/gemini-repo-pdp/gemini-tool-aot/img/240502_140029.352_0.png" alt="App on iPhone" />
+            <img src="/tiny-logo.png" alt="Tiny Logo" className="tiny-logo" />
+            <img src="/timy-png.png" alt="Timy PNG" className="timy-png" />
           </div>
         </div>
       </header>
