@@ -50,7 +50,7 @@
 }
 
 .legal-page-container a {
-  color: #9370DB; /* Use primary blue from App.css */
+  color: #9333EA;
   text-decoration: none;
 }
 
@@ -67,11 +67,11 @@
 .back-link {
   display: inline-block;
   margin-bottom: 20px;
-  color: #9370DB; /* Primary blue for back link */
+  color: #9333EA;
   text-decoration: none;
   font-weight: 500;
 }
 
 .back-link:hover {
-  color: #fff; /* White on hover */
+  color: #A855F7;
 }
