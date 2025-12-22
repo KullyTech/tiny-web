@@ -1,5 +1,5 @@
 import React from 'react';
-import './LegalStyles.css';
+import './../styles/LegalStyles.css';
 
 const TermsAndConditions = () => {
   return (
@@ -137,7 +137,7 @@ const TermsAndConditions = () => {
         <li>Deletion is permanent and cannot be undone</li>
       </ul>
       <p><strong>To Prevent Automatic Deletion:</strong><br />
-      Simply open the app and log in at least once every 30 days.</p>
+        Simply open the app and log in at least once every 30 days.</p>
 
       <h3>4.4 Account Termination by User</h3>
       <p>You may delete your account at any time through:</p>
@@ -192,7 +192,7 @@ const TermsAndConditions = () => {
         <li>Only grant Companion access to individuals you trust completely</li>
       </ul>
       <p><strong>Optional Feature (Future Update):</strong><br />
-      We may add an audit log feature that allows Main Accounts to view Companion activity (what was viewed, shared, or exported).</p>
+        We may add an audit log feature that allows Main Accounts to view Companion activity (what was viewed, shared, or exported).</p>
 
       <h3>5.4 Content Responsibility</h3>
       <p>You are solely responsible for your UGC. You represent and warrant that:</p>
@@ -451,7 +451,7 @@ const TermsAndConditions = () => {
         <li>Your physical or electronic signature</li>
       </ul>
       <p><strong>Counter-Notice:</strong><br />
-      If you believe your content was wrongly removed due to a copyright claim, you may submit a counter-notice with the same information, explaining why you believe the content does not infringe.</p>
+        If you believe your content was wrongly removed due to a copyright claim, you may submit a counter-notice with the same information, explaining why you believe the content does not infringe.</p>
 
       <hr />
 
@@ -595,11 +595,11 @@ const TermsAndConditions = () => {
 
       <h3>17.2 Dispute Resolution Process</h3>
       <p><strong>Step 1: Informal Resolution</strong><br />
-      Before filing any formal dispute, you agree to contact us at tinybymiracle@gmail.com to attempt to resolve the dispute informally. We will attempt to resolve the dispute within 30 days.</p>
+        Before filing any formal dispute, you agree to contact us at tinybymiracle@gmail.com to attempt to resolve the dispute informally. We will attempt to resolve the dispute within 30 days.</p>
       <p><strong>Step 2: Mediation (Required)</strong><br />
-      If informal resolution is unsuccessful, both parties agree to participate in <strong>mediation in Jakarta, Indonesia</strong> before pursuing litigation or arbitration. Mediation costs will be shared equally.</p>
+        If informal resolution is unsuccessful, both parties agree to participate in <strong>mediation in Jakarta, Indonesia</strong> before pursuing litigation or arbitration. Mediation costs will be shared equally.</p>
       <p><strong>Step 3: Litigation</strong><br />
-      If mediation is unsuccessful, disputes may be resolved through litigation in the courts of Jakarta, Indonesia. You consent to the personal jurisdiction of these courts.</p>
+        If mediation is unsuccessful, disputes may be resolved through litigation in the courts of Jakarta, Indonesia. You consent to the personal jurisdiction of these courts.</p>
 
       <h3>17.3 Exceptions</h3>
       <p>The following disputes are exempt from the mediation requirement and may be brought directly in court:</p>
@@ -678,9 +678,9 @@ const TermsAndConditions = () => {
         <li><strong>Location:</strong> Jakarta, Indonesia (virtual team, no physical office)</li>
       </ul>
       <p><strong>For Legal Inquiries:</strong><br />
-      Email us with the subject line "Legal Inquiry - Terms and Conditions"</p>
+        Email us with the subject line "Legal Inquiry - Terms and Conditions"</p>
       <p><strong>Response Time:</strong><br />
-      We aim to respond to all inquiries within 5 business days.</p>
+        We aim to respond to all inquiries within 5 business days.</p>
 
       <hr />
 

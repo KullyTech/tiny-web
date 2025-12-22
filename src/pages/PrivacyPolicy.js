@@ -1,13 +1,13 @@
 import React from 'react';
-import './LegalStyles.css';
+import './../styles/LegalStyles.css';
 
 const PrivacyPolicy = () => {
   return (
     <div className="legal-page-container">
       <a href="/" className="back-link">← Back to Home</a>
-      
+
       <h1>PRIVACY POLICY</h1>
-      
+
       <div className="legal-meta">
         <p><strong>Last Updated:</strong> November 25, 2025</p>
         <p><strong>Effective Date:</strong> November 25, 2025</p>
@@ -99,13 +99,13 @@ const PrivacyPolicy = () => {
       </ul>
 
       <p><strong>Target Markets:</strong><br />
-      We primarily target users in Indonesia and do not actively market to EEA/UK residents. However, if you are an EEA/UK resident using our app, this policy and your regional rights apply. As our user base grows, we commit to implementing Standard Contractual Clauses (SCCs) and UK IDTA where required, and appointing EU/UK representatives if we reach the scale that necessitates it.</p>
+        We primarily target users in Indonesia and do not actively market to EEA/UK residents. However, if you are an EEA/UK resident using our app, this policy and your regional rights apply. As our user base grows, we commit to implementing Standard Contractual Clauses (SCCs) and UK IDTA where required, and appointing EU/UK representatives if we reach the scale that necessitates it.</p>
 
       <p><strong>Age Restrictions:</strong><br />
-      The App is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+        The App is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
 
       <p><strong>Children Safeguards:</strong><br />
-      If we discover or are notified that a child under 13 has created an account:</p>
+        If we discover or are notified that a child under 13 has created an account:</p>
       <ol>
         <li>We will immediately disable the account and prevent further access</li>
         <li>We will contact the email address on file to verify the user's age</li>
@@ -250,7 +250,7 @@ const PrivacyPolicy = () => {
       <hr />
 
       <h2>7. ANALYTICS AND CONSENT</h2>
-      
+
       <h3>7.1 How Analytics Work</h3>
       <p>By default, when you use the App, Firebase Analytics collects pseudonymized usage data to help us understand how the app is used and improve it. This includes:</p>
       <ul>
@@ -269,7 +269,7 @@ const PrivacyPolicy = () => {
 
       <h3>7.2 Your Control Over Analytics</h3>
       <p><strong>For All Users:</strong><br />
-      You can disable analytics at any time through the app:</p>
+        You can disable analytics at any time through the app:</p>
       <ol>
         <li>Go to <strong>Settings</strong> in the App</li>
         <li>Find <strong>"Analytics"</strong> toggle</li>
@@ -281,7 +281,7 @@ const PrivacyPolicy = () => {
         <li><strong>Disabled:</strong> The app will not send any usage or analytics data. Core app features will continue to work normally.</li>
       </ul>
       <p><strong>For EEA/UK Residents:</strong><br />
-      While analytics run by default, we want to be transparent:</p>
+        While analytics run by default, we want to be transparent:</p>
       <ul>
         <li>Device identifiers are used, which can be considered personal data under GDPR</li>
         <li>You have the right to opt out at any time using the in-app toggle</li>
@@ -332,7 +332,7 @@ const PrivacyPolicy = () => {
         <li>Incident response procedures in place</li>
       </ul>
       <p><strong>Important Clarification:</strong><br />
-      We use Apple's default CloudKit encryption for iCloud storage and Firebase's default encryption. Data is encrypted in transit (TLS) and at rest. CloudKit encryption keys are managed by Apple, and we do not implement additional client-side end-to-end encryption beyond Apple's and Firebase's standard protections.</p>
+        We use Apple's default CloudKit encryption for iCloud storage and Firebase's default encryption. Data is encrypted in transit (TLS) and at rest. CloudKit encryption keys are managed by Apple, and we do not implement additional client-side end-to-end encryption beyond Apple's and Firebase's standard protections.</p>
 
       <h3>8.3 Data Protection Impact Assessment (DPIA)</h3>
       <p>Given that we process sensitive health data (fetal heartbeat recordings, heart rate, pregnancy information), we periodically assess privacy risks and implement appropriate safeguards. As our app evolves and our user base grows, we will conduct formal Data Protection Impact Assessments (DPIAs) and publish summaries of our findings and mitigations when available.</p>
@@ -360,7 +360,7 @@ const PrivacyPolicy = () => {
       <ul>
         <li><strong>Purpose:</strong> App analytics, authentication, and cloud infrastructure</li>
         <li><strong>Data Shared:</strong> Pseudonymized device identifiers, app usage events, authentication tokens</li>
-        <li><strong>Configuration:</strong> 
+        <li><strong>Configuration:</strong>
           <ul>
             <li>Google Signals: Disabled</li>
             <li>Ad Personalization: Disabled</li>
@@ -377,7 +377,7 @@ const PrivacyPolicy = () => {
       <p><strong>Apple Inc.:</strong></p>
       <ul>
         <li><strong>Purpose:</strong> Authentication (Apple Sign-In), cloud storage (iCloud), device integration (Apple Watch), health data (HealthKit)</li>
-        <li><strong>Data Shared:</strong> 
+        <li><strong>Data Shared:</strong>
           <ul>
             <li>Apple Sign-In: Authentication token, email (or private relay email)</li>
             <li>iCloud: User-created content (moments, notes, recordings) stored in your personal iCloud account</li>
@@ -390,7 +390,7 @@ const PrivacyPolicy = () => {
       </ul>
 
       <p><strong>SDK Registry:</strong><br />
-      We currently use only Firebase and Apple system frameworks (CloudKit, HealthKit, Sign-In with Apple). We do not integrate any additional third-party SDKs, advertising networks, or tracking libraries. If we add new SDKs in the future, we will update this section and notify users via email.</p>
+        We currently use only Firebase and Apple system frameworks (CloudKit, HealthKit, Sign-In with Apple). We do not integrate any additional third-party SDKs, advertising networks, or tracking libraries. If we add new SDKs in the future, we will update this section and notify users via email.</p>
       <p><strong>Important:</strong> Firebase Analytics data is pseudonymized, meaning it uses device identifiers rather than your name or email. However, this is not fully anonymous data, as device IDs can potentially be linked to individuals. We have configured Firebase to maximize privacy by disabling ad personalization, enabling IP anonymization, and minimizing data retention.</p>
 
       <h3>9.3 Companion Account Sharing</h3>
@@ -479,7 +479,7 @@ const PrivacyPolicy = () => {
 
       <h3>11.2 Account Deletion and Inactivity</h3>
       <p><strong>User-Initiated Deletion:</strong><br />
-      When you delete your account through the app:</p>
+        When you delete your account through the app:</p>
       <ul>
         <li>Account information is immediately marked for deletion</li>
         <li>All data stored on our servers is deleted within 30 days</li>
@@ -487,7 +487,7 @@ const PrivacyPolicy = () => {
         <li>On-device data (recordings, HealthKit data) remains on your device until you delete the app</li>
       </ul>
       <p><strong>Automatic Deletion After Inactivity:</strong><br />
-      If you do not log in to your account from any device for <strong>30 consecutive days</strong>, your account will be automatically deleted. Here's how it works:</p>
+        If you do not log in to your account from any device for <strong>30 consecutive days</strong>, your account will be automatically deleted. Here's how it works:</p>
       <p><strong>Day 23 (7-day warning):</strong></p>
       <ul>
         <li>You will receive an email notification at your account email address</li>
@@ -593,13 +593,13 @@ const PrivacyPolicy = () => {
 
       <h3>12.5 How to Exercise Your Rights</h3>
       <p><strong>Submission Process:</strong><br />
-      To exercise any of the above rights, contact us at:</p>
+        To exercise any of the above rights, contact us at:</p>
       <ul>
         <li><strong>Email:</strong> tinybymiracle@gmail.com</li>
         <li><strong>Phone:</strong> +62 822-9046-2070</li>
       </ul>
       <p><strong>Identity Verification:</strong><br />
-      To protect your privacy and security, we will verify your identity before fulfilling requests:</p>
+        To protect your privacy and security, we will verify your identity before fulfilling requests:</p>
       <ul>
         <li><strong>Primary method:</strong> We will verify your identity through your Apple Sign-In authentication (you'll be asked to log in to the app).</li>
         <li><strong>Fallback method:</strong> If Apple Sign-In verification is unavailable, we will send a verification code to your account email address.</li>
@@ -663,7 +663,7 @@ const PrivacyPolicy = () => {
 
       <h3>14.2 Analytics Opt-Out</h3>
       <p><strong>For All Users:</strong><br />
-      You can opt out of Firebase Analytics at any time:</p>
+        You can opt out of Firebase Analytics at any time:</p>
       <ol>
         <li>Open the App</li>
         <li>Go to <strong>Settings</strong></li>
@@ -731,7 +731,7 @@ const PrivacyPolicy = () => {
         <li><strong>Minor changes:</strong> We will update the "Last Updated" date at the top of this policy</li>
       </ul>
       <p><strong>Your Continued Use:</strong><br />
-      Your continued use of the App after changes take effect constitutes acceptance of the updated Privacy Policy. If you do not agree with changes, you should stop using the App and delete your account before the changes take effect.</p>
+        Your continued use of the App after changes take effect constitutes acceptance of the updated Privacy Policy. If you do not agree with changes, you should stop using the App and delete your account before the changes take effect.</p>
 
       <h3>16.2 Version History</h3>
       <p>You can request previous versions of this Privacy Policy by contacting tinybymiracle@gmail.com.</p>
@@ -747,19 +747,19 @@ const PrivacyPolicy = () => {
         <li><strong>Location:</strong> Jakarta, Indonesia (virtual team, no physical office)</li>
       </ul>
       <p><strong>For Privacy-Specific Inquiries:</strong><br />
-      Email us at tinybymiracle@gmail.com with the subject line "Privacy Inquiry"</p>
+        Email us at tinybymiracle@gmail.com with the subject line "Privacy Inquiry"</p>
       <p><strong>For Data Subject Rights Requests:</strong><br />
-      Email us at tinybymiracle@gmail.com with the subject line "Data Rights Request" and specify which right you wish to exercise.</p>
+        Email us at tinybymiracle@gmail.com with the subject line "Data Rights Request" and specify which right you wish to exercise.</p>
       <p><strong>For EEA/UK Residents:</strong><br />
-      While we do not have a formal EU or UK Representative at this time, EEA/UK residents can contact us directly at tinybymiracle@gmail.com for all privacy matters. We commit to responding to all EEA/UK inquiries with the same care and urgency as local requests.</p>
+        While we do not have a formal EU or UK Representative at this time, EEA/UK residents can contact us directly at tinybymiracle@gmail.com for all privacy matters. We commit to responding to all EEA/UK inquiries with the same care and urgency as local requests.</p>
       <p><strong>Response Time:</strong><br />
-      We aim to respond to all inquiries within 5 business days and fulfill rights requests within 30 days (or 45 days for CCPA requests).</p>
+        We aim to respond to all inquiries within 5 business days and fulfill rights requests within 30 days (or 45 days for CCPA requests).</p>
 
       <hr />
 
       <h2>18. GOVERNING LAW AND DISPUTE RESOLUTION</h2>
       <p><strong>Governing Law:</strong><br />
-      This Privacy Policy is governed by and construed in accordance with the laws of Indonesia, without regard to its conflict of law provisions.</p>
+        This Privacy Policy is governed by and construed in accordance with the laws of Indonesia, without regard to its conflict of law provisions.</p>
       <p><strong>Dispute Resolution:</strong></p>
       <ul>
         <li>For Indonesia residents: Disputes will be resolved through mediation in Jakarta, Indonesia before pursuing litigation</li>
@@ -771,9 +771,9 @@ const PrivacyPolicy = () => {
 
       <h2>19. ACCESSIBILITY AND LANGUAGE</h2>
       <p><strong>Language:</strong><br />
-      This Privacy Policy is provided in English. If you need assistance understanding any part of this policy, please contact us at tinybymiracle@gmail.com.</p>
+        This Privacy Policy is provided in English. If you need assistance understanding any part of this policy, please contact us at tinybymiracle@gmail.com.</p>
       <p><strong>Accessibility:</strong><br />
-      The Tiny - Fetal Heartbeat App follows Apple's Accessibility Guidelines to ensure the app is usable by people with disabilities. We support:</p>
+        The Tiny - Fetal Heartbeat App follows Apple's Accessibility Guidelines to ensure the app is usable by people with disabilities. We support:</p>
       <ul>
         <li>VoiceOver screen reader</li>
         <li>Dynamic Type for adjustable text sizes</li>
@@ -785,7 +785,7 @@ const PrivacyPolicy = () => {
       <hr />
 
       <p><strong>By using Tiny - Fetal Heartbeat, you acknowledge that you have read, understood, and agree to this Privacy Policy.</strong></p>
-      
+
       <p><em>This Privacy Policy was last updated on November 25, 2025, and is effective immediately for new users and 30 days after notification for existing users.</em></p>
     </div>
   );

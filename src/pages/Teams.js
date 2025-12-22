@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './App.css'; // Reusing App.css for general styling if needed
+import './../styles/App.css'; // Reusing App.css for general styling if needed
 
 const teamMembers = [
   { name: 'Arya', role: 'Product Manager', image: '/teams/arya-headshot.png', linkedin: 'https://www.linkedin.com/in/aryamaulanabratajayaa/' },
@@ -36,7 +36,7 @@ function Teams() {
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
           <div className="logo">
             <Link to="/"> {/* Link back to home */}
-              <img src="/tiny-logo.png" alt="Tiny Logo" className="navbar-logo" />
+              <img src="/assets/brand/logo-main.png" alt="Tiny Logo" className="navbar-logo" />
             </Link>
           </div>
           <div className="nav-links">
@@ -79,7 +79,7 @@ function Teams() {
           <div className="footer-content">
             <div className="footer-brand">
               <div className="logo">
-                <img src="/tiny-logo.png" alt="Tiny Logo" style={{ height: '32px', width: 'auto', opacity: 0.9 }} />
+                <img src="/assets/brand/logo-main.png" alt="Tiny Logo" style={{ height: '32px', width: 'auto', opacity: 0.9 }} />
               </div>
               <p>Hear the life within.</p>
             </div>
