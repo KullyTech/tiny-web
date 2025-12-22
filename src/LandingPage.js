@@ -4,7 +4,6 @@ import './App.css';
 
 function LandingPage() {
   const [scrolled, setScrolled] = useState(false);
-  const [videoPlaying, setVideoPlaying] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,14 +31,6 @@ function LandingPage() {
     return () => elements.forEach((el) => observer.unobserve(el));
   }, []);
 
-  const handlePlayVideo = () => {
-    const video = document.querySelector('.demo-video');
-    if (video) {
-      video.play();
-      setVideoPlaying(true);
-    }
-  };
-
   return (
     <div className="App">
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
@@ -49,7 +40,7 @@ function LandingPage() {
           </Link>
         </div>
         <div className="nav-links">
-          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</a>
+          <button onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }} style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', cursor: 'pointer', color: 'inherit' }}>Home</button>
           <a href="#features">Features</a>
           <a href="#stories">Stories</a>
           <Link to="/teams">Team</Link>
