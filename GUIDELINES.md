@@ -34,5 +34,4 @@ All static assets should be organized by type within themed subdirectories:
 - **Asset Optimization**: Always compress images and videos before committing to the repository.
 
 ---
-*Signed,*
-*CTO, Tiny App Team*
+*The Tiny App Team*
