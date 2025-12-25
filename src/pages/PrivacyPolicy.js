@@ -1,9 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import './../styles/LegalStyles.css';
 
 const PrivacyPolicy = () => {
   return (
     <div className="legal-page-container">
+      <Helmet>
+        <title>Privacy Policy - Tiny Miracle</title>
+        <meta name="description" content="Privacy Policy for Tiny Miracle App. Learn how we protect your data and ensure your privacy." />
+        <link rel="canonical" href="https://tinymiracle.life/privacy-policy" />
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <a href="/" className="back-link">← Back to Home</a>
 
       <h1>PRIVACY POLICY</h1>

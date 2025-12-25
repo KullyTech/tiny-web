@@ -205,9 +205,12 @@ h3,
 }
 
 .nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.75rem 1.75rem;
   background: var(--text);
-  color: var(--bg-deep);
+  color: var(--bg-deep) !important; /* Force high contrast */
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
@@ -218,6 +221,19 @@ h3,
 .nav-cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  color: var(--text);
+  padding: 0.5rem;
+  margin-right: -0.5rem; /* Optical alignment */
+  z-index: 1001;
+}
+
+.mobile-only {
+  display: none;
 }
 
 /* --- Hero Section --- */
@@ -769,6 +785,72 @@ h3,
   .footer-links {
     flex-wrap: wrap;
     gap: 2rem;
+  }
+
+  /* --- Mobile Navbar Styles --- */
+  .navbar {
+    padding: 1rem 5%;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative; 
+    z-index: 1002;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-deep);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2rem;
+    box-sizing: border-box; 
+    z-index: 1000;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* Only target text links for large font */
+  .nav-links > a:not(.nav-cta), 
+  .nav-links > button {
+    font-size: 2rem; 
+    font-family: var(--font-body);
+    font-weight: 500;
+    color: var(--text);
+    text-align: center;
+  }
+
+  /* Reset CTA style for mobile menu */
+  .nav-links .nav-cta {
+    font-size: 1.1rem;
+    font-family: var(--font-body);
+    padding: 1rem 2.5rem; 
+    margin-top: 1rem;
+    background: var(--text);
+    color: var(--bg-deep) !important;
+    width: fit-content;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline-flex;
   }
 }
 

@@ -20,17 +20,20 @@ export default function Experience() {
         {
             img: "/assets/images/illustration-iphone.png",
             title: "1. Just your iPhone",
-            desc: "Forget the medical devices and messy gels. Tiny safely uses your phone’s microphone to listen, requiring nothing but the device you already own."
+            desc: "Forget the medical devices and messy gels. Tiny safely uses your phone’s microphone to listen, requiring nothing but the device you already own.",
+            alt: "Illustration of iPhone showing how to listen to baby heartbeat without extra devices"
         },
         {
             img: "/assets/images/illustration-airpods.png",
             title: "2. Create your sanctuary",
-            desc: "Connect your headphones to block out the world. This ensures you hear every subtle movement and heartbeat with crystal clarity."
+            desc: "Connect your headphones to block out the world. This ensures you hear every subtle movement and heartbeat with crystal clarity.",
+            alt: "AirPods connected to iPhone for clear fetal heartbeat listening"
         },
         {
             img: "/assets/images/illustration-tutorial.gif",
             title: "3. Capture the connection",
-            desc: "Place the phone on your belly to find the rhythm. Watch it visualize, record the memory, and share the joy instantly."
+            desc: "Place the phone on your belly to find the rhythm. Watch it visualize, record the memory, and share the joy instantly.",
+            alt: "Animation showing how to place iPhone on pregnant belly to record heartbeat"
         }
     ];
 
@@ -63,7 +66,7 @@ export default function Experience() {
                             whileHover={{ y: -8, transition: { duration: 0.3 } }}
                         >
                             <div className="step-visual">
-                                <img src={step.img} alt={step.title} />
+                                <img src={step.img} alt={step.alt} width="160" height="160" />
                             </div>
                             <h3>{step.title}</h3>
                             <p>{step.desc}</p>

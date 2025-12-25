@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './../styles/App.css'; // Reusing App.css for general styling if needed
 
 const teamMembers = [
@@ -32,6 +33,11 @@ function Teams() {
 
   return (
     <div className="teams-page">
+      <Helmet>
+        <title>Our Team - Tiny Miracle</title>
+        <meta name="description" content="Meet the team behind Tiny Miracle. We are developers, designers, and dreamers building the best pregnancy bonding experience." />
+        <link rel="canonical" href="https://tinymiracle.life/teams" />
+      </Helmet>
       <header className="hero-section"> {/* Reusing hero-section for consistent header style */}
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
           <div className="logo">
