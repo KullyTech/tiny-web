@@ -70,14 +70,16 @@ export default function Hero() {
                         <div className="demo-video-wrapper" style={{ height: '100%', position: 'relative' }}>
                             <video
                                 className="demo-video"
-                                src="/assets/videos/hero-demo.mp4"
                                 playsInline
-                                autoPlaysInline
                                 autoPlay
                                 loop
                                 muted
+                                preload="auto"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '40px' }}
-                            />
+                            >
+                                <source src="/assets/videos/hero-demo.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                         <img
                             src="/assets/images/iphone-bezel.png"
