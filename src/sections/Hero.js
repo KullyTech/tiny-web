@@ -78,30 +78,6 @@ export default function Hero() {
                                 muted
                                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '40px' }}
                             />
-
-                            <motion.div
-                                style={{
-                                    position: 'absolute',
-                                    bottom: '15%',
-                                    left: '50%',
-                                    x: '-50%',
-                                    width: '120px',
-                                    height: '120px',
-                                    borderRadius: '50%',
-                                    background: 'radial-gradient(circle, rgba(255, 198, 82, 0.4) 0%, transparent 70%)',
-                                    zIndex: 6,
-                                    pointerEvents: 'none'
-                                }}
-                                animate={{
-                                    scale: [1, 1.2, 1],
-                                    opacity: [0.3, 0.7, 0.3]
-                                }}
-                                transition={{
-                                    duration: 1.5,
-                                    repeat: Infinity,
-                                    ease: "easeInOut"
-                                }}
-                            />
                         </div>
                         <img
                             src="/assets/images/iphone-bezel.png"

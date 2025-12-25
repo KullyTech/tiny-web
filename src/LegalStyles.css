@@ -1,0 +1,77 @@
+.legal-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif; /* Use Inter font from App.css */
+  line-height: 1.6;
+  color: #ccc; /* Light grey text */
+  background-color: #000; /* Dark background to match main site */
+}
+
+.legal-page-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff; /* White for main headings */
+  border-bottom: 2px solid #333; /* Darker border */
+  padding-bottom: 20px;
+}
+
+.legal-page-container h2 {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #fff; /* White for subheadings */
+  border-bottom: 1px solid #333; /* Darker border */
+  padding-bottom: 10px;
+}
+
+.legal-page-container h3 {
+  font-size: 1.3rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #ddd; /* Slightly darker white for sub-subheadings */
+}
+
+.legal-page-container p {
+  margin-bottom: 15px;
+}
+
+.legal-page-container ul, .legal-page-container ol {
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+
+.legal-page-container li {
+  margin-bottom: 8px;
+}
+
+.legal-page-container strong {
+  color: #fff; /* White for strong text */
+}
+
+.legal-page-container a {
+  color: #9333EA;
+  text-decoration: none;
+}
+
+.legal-page-container a:hover {
+  text-decoration: underline;
+}
+
+.legal-meta {
+  color: #aaa; /* Lighter grey for meta info */
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #9333EA;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: #A855F7;
+}
