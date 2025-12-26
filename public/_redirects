@@ -1,0 +1,7 @@
+# Force HTTPS
+https://www.tinymiracle.life/* https://tinymiracle.life/:splat 301
+http://tinymiracle.life/* https://tinymiracle.life/:splat 301
+http://www.tinymiracle.life/* https://tinymiracle.life/:splat 301
+
+# SPA fallback
+/* /index.html 200

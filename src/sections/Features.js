@@ -32,7 +32,7 @@ export default function Features() {
                         </a>
                     </div>
                     <div className="feature-visual">
-                        <img src="/assets/images/mockup-face-front.png" alt="Tiny App Interface" style={{ width: '100%', height: 'auto', maxWidth: '320px', display: 'block', margin: '0 auto' }} />
+                        <img src="/assets/images/mockup-face-front.webp" alt="Tiny App Interface" style={{ width: '100%', height: 'auto', maxWidth: '320px', display: 'block', margin: '0 auto' }} />
                     </div>
                 </motion.div>
 
@@ -53,7 +53,7 @@ export default function Features() {
                         </a>
                     </div>
                     <div className="feature-visual">
-                        <img src="/assets/images/mockup-mom-dad-same-room.png" alt="Sharing Heartbeat" style={{ width: '100%', height: 'auto', maxWidth: '400px', display: 'block', margin: '0 auto' }} />
+                        <img src="/assets/images/mockup-mom-dad-same-room.webp" alt="Sharing Heartbeat" style={{ width: '100%', height: 'auto', maxWidth: '400px', display: 'block', margin: '0 auto' }} />
                     </div>
                 </motion.div>
             </div>

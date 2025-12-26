@@ -4,12 +4,12 @@ import { Helmet } from 'react-helmet-async';
 import './../styles/App.css'; // Reusing App.css for general styling if needed
 
 const teamMembers = [
-  { name: 'Arya', role: 'Product Manager', image: '/teams/arya-headshot.png', linkedin: 'https://www.linkedin.com/in/aryamaulanabratajayaa/' },
-  { name: 'Jeje', role: 'Designer', image: '/teams/jeje-headshot.png', linkedin: 'https://www.linkedin.com/in/jessicahuangg20/' },
-  { name: 'Vivi', role: 'Designer', image: '/teams/vivi-headshot.png', linkedin: 'https://www.linkedin.com/in/griselda-shavilla' },
-  { name: 'Revan', role: 'iOS Developer', image: '/teams/revan-headshot.png', linkedin: 'https://www.linkedin.com/in/revanza-narendra/' },
-  { name: 'Yoga', role: 'iOS Developer', image: '/teams/yoga-headshot.png', linkedin: 'https://www.linkedin.com/in/benedictus-yogatama' },
-  { name: 'Destu', role: 'iOS Developer', image: '/teams/destu-headshot.png', linkedin: 'https://www.linkedin.com/in/destucikal/' },
+  { name: 'Arya', role: 'Product Manager', image: '/teams/arya-headshot.webp', linkedin: 'https://www.linkedin.com/in/aryamaulanabratajayaa/' },
+  { name: 'Jeje', role: 'Designer', image: '/teams/jeje-headshot.webp', linkedin: 'https://www.linkedin.com/in/jessicahuangg20/' },
+  { name: 'Vivi', role: 'Designer', image: '/teams/vivi-headshot.webp', linkedin: 'https://www.linkedin.com/in/griselda-shavilla' },
+  { name: 'Revan', role: 'iOS Developer', image: '/teams/revan-headshot.webp', linkedin: 'https://www.linkedin.com/in/revanza-narendra/' },
+  { name: 'Yoga', role: 'iOS Developer', image: '/teams/yoga-headshot.webp', linkedin: 'https://www.linkedin.com/in/benedictus-yogatama' },
+  { name: 'Destu', role: 'iOS Developer', image: '/teams/destu-headshot.webp', linkedin: 'https://www.linkedin.com/in/destucikal/' },
 ];
 
 function Teams() {
@@ -34,15 +34,15 @@ function Teams() {
   return (
     <div className="teams-page">
       <Helmet>
-        <title>Our Team - Tiny Miracle</title>
-        <meta name="description" content="Meet the team behind Tiny Miracle. We are developers, designers, and dreamers building the best pregnancy bonding experience." />
+        <title>Our Team - Tiny</title>
+        <meta name="description" content="Meet the team behind Tiny. We are developers, designers, and dreamers building the best pregnancy bonding experience." />
         <link rel="canonical" href="https://tinymiracle.life/teams" />
       </Helmet>
       <header className="hero-section"> {/* Reusing hero-section for consistent header style */}
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
           <div className="logo">
             <Link to="/"> {/* Link back to home */}
-              <img src="/assets/brand/logo-main.png" alt="Tiny Logo" className="navbar-logo" />
+              <img src="/assets/brand/logo-main.webp" alt="Tiny Logo" className="navbar-logo" />
             </Link>
           </div>
           <div className="nav-links">
@@ -85,7 +85,7 @@ function Teams() {
           <div className="footer-content">
             <div className="footer-brand">
               <div className="logo">
-                <img src="/assets/brand/logo-main.png" alt="Tiny Logo" style={{ height: '32px', width: 'auto', opacity: 0.9 }} />
+                <img src="/assets/brand/logo-main.webp" alt="Tiny Logo" style={{ height: '32px', width: 'auto', opacity: 0.9 }} />
               </div>
               <p>Hear the life within.</p>
             </div>

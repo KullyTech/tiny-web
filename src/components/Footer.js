@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="footer-content">
                     <div className="footer-brand">
                         <div className="logo">
-                            <img src="/assets/brand/logo-main.png" alt="Tiny Logo" style={{ height: '32px', width: 'auto', opacity: 0.9 }} />
+                            <img src="/assets/brand/logo-main.webp" alt="Tiny Logo" style={{ height: '32px', width: 'auto', opacity: 0.9 }} />
                         </div>
                         <p>Hear the life within.</p>
                     </div>

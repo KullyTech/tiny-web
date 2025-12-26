@@ -25,7 +25,7 @@ export default function Navbar() {
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="logo">
                 <Link to="/" onClick={closeMenu}>
-                    <img src="/assets/brand/logo-main.png" alt="Tiny Logo" className="navbar-logo" />
+                    <img src="/assets/brand/logo-main.webp" alt="Tiny Logo" className="navbar-logo" />
                 </Link>
             </div>
 

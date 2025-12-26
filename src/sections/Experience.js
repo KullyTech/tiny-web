@@ -18,13 +18,13 @@ const staggerContainer = {
 export default function Experience() {
     const steps = [
         {
-            img: "/assets/images/illustration-iphone.png",
+            img: "/assets/images/illustration-iphone.webp",
             title: "1. Just your iPhone",
             desc: "Forget the medical devices and messy gels. Tiny safely uses your phone’s microphone to listen, requiring nothing but the device you already own.",
             alt: "Illustration of iPhone showing how to listen to baby heartbeat without extra devices"
         },
         {
-            img: "/assets/images/illustration-airpods.png",
+            img: "/assets/images/illustration-airpods.webp",
             title: "2. Create your sanctuary",
             desc: "Connect your headphones to block out the world. This ensures you hear every subtle movement and heartbeat with crystal clarity.",
             alt: "AirPods connected to iPhone for clear fetal heartbeat listening"

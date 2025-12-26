@@ -38,7 +38,7 @@ function LandingPage() {
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
           <div className="logo">
             <Link to="/">
-              <img src="/tiny-logo.png" alt="Tiny Logo" className="navbar-logo" />
+              <img src="/assets/brand/logo-main.webp" alt="Tiny Logo" className="navbar-logo" />
             </Link>
           </div>
           <div className="nav-links">
@@ -63,7 +63,7 @@ function LandingPage() {
             </a>
           </div>
           <div className="hero-image">
-            <img src="/timy-png.png" alt="Timy PNG" className="timy-png" />
+            <img src="/assets/images/illustration-iphone.webp" alt="Tiny App" className="timy-png" />
           </div>
         </div>
       </header>
@@ -71,8 +71,8 @@ function LandingPage() {
       <section className="mockup-section" id="features">
         <h2>Tiny using iPhone and AirPods to record baby's <span className="highlight-word">heartbeat</span> then transforming it into a precious shareable <span className="highlight-word">memory</span></h2>
         <div className="first-feature-images">
-          <img src="/mockup-face-front.png" alt="Tiny App Mockup Front" className="mockup-image-front" />
-          <img src="/mockup-face-diagonal.png" alt="Tiny App Mockup Diagonal" className="mockup-image-diagonal" />
+          <img src="/assets/images/mockup-face-front.webp" alt="Tiny App Mockup Front" className="mockup-image-front" />
+          <img src="/assets/images/mockup-face-diagonal.webp" alt="Tiny App Mockup Diagonal" className="mockup-image-diagonal" />
         </div>
       </section>
 
@@ -82,7 +82,7 @@ function LandingPage() {
           <p>Share your baby's recorded heartbeats with your partner, wherever they are.</p>
         </div>
         <div className="second-feature-images">
-          <img src="/mockup-mom-dad-same-room.png" alt="Tiny App Mockup Mom Dad Same Room" className="mockup-image-mom-dad" />
+          <img src="/assets/images/mockup-mom-dad-same-room.webp" alt="Tiny App Mockup Mom Dad Same Room" className="mockup-image-mom-dad" />
         </div>
       </section>
 

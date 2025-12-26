@@ -6,8 +6,8 @@ const PrivacyPolicy = () => {
   return (
     <div className="legal-page-container">
       <Helmet>
-        <title>Privacy Policy - Tiny Miracle</title>
-        <meta name="description" content="Privacy Policy for Tiny Miracle App. Learn how we protect your data and ensure your privacy." />
+        <title>Privacy Policy - Tiny</title>
+        <meta name="description" content="Privacy Policy for Tiny App. Learn how we protect your data and ensure your privacy." />
         <link rel="canonical" href="https://tinymiracle.life/privacy-policy" />
         <meta name="robots" content="noindex" />
       </Helmet>

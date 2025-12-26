@@ -29,10 +29,10 @@ export default function Hero() {
                     variants={staggerContainer}
                 >
                     <motion.h1 variants={fadeInUp}>
-                        <span className="text-gradient">Listen to your baby's heartbeat</span> with just your iPhone
+                        <span className="text-gradient">Baby Heartbeat Listener</span> on Your iPhone
                     </motion.h1>
                     <motion.p className="hero-subtitle" variants={fadeInUp}>
-                        Tiny lets you listen to your baby's heartbeat using just your iPhone. No extra equipment needed—safe, simple, and always with you.
+                        Tiny is the tiny iOS app to listen to baby heartbeat sounds safely. No extra equipment needed—simple and always with you.
                     </motion.p>
                     <motion.div className="hero-cta-group" variants={fadeInUp}>
                         <a href="https://testflight.apple.com/join/sHZ4FgyN" target="_blank" rel="noopener noreferrer" className="app-store-badge">
@@ -82,7 +82,7 @@ export default function Hero() {
                             </video>
                         </div>
                         <img
-                            src="/assets/images/iphone-bezel.png"
+                            src="/assets/images/iphone-bezel.webp"
                             alt="iPhone Bezel"
                             className="phone-bezel-overlay"
                         />

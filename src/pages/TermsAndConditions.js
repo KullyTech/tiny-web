@@ -6,8 +6,8 @@ const TermsAndConditions = () => {
   return (
     <div className="legal-page-container">
       <Helmet>
-        <title>Terms and Conditions - Tiny Miracle</title>
-        <meta name="description" content="Terms and Conditions for using the Tiny Miracle App." />
+        <title>Terms and Conditions - Tiny</title>
+        <meta name="description" content="Terms and Conditions for using the Tiny App." />
         <link rel="canonical" href="https://tinymiracle.life/terms-and-conditions" />
         <meta name="robots" content="noindex" />
       </Helmet>
