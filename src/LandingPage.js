@@ -87,14 +87,16 @@ function LandingPage() {
       </section>
 
       <main>
-        <section className="testimonials-section" id="stories">
+        <section class="testimonials-section" id="stories">
           <h2>What Moms Say</h2>
-          <div className="testimonial">
-            <blockquote>
-              "I was nervous at first, wondering if I'd really hear it. But when I found that little heartbeat, the joy was overwhelming. It takes a little patience, but the moment is absolutely magical."
-            </blockquote>
-            <div className="testimonial-author">
-              <cite>- Mia</cite>
+          <div class="testimonial-single-wrapper" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
+            <div className="testimonial" style={{ maxWidth: '600px', textAlign: 'center' }}>
+              <blockquote className="quote-text">
+                "I was nervous at first, wondering if I'd really hear it. But when I found that little heartbeat, the joy was overwhelming. It takes a little patience, but the moment is absolutely magical."
+              </blockquote>
+              <div className="testimonial-author">
+                <cite>- Mia</cite>
+              </div>
             </div>
           </div>
         </section>

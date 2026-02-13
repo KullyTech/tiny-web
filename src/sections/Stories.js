@@ -16,11 +16,10 @@ const staggerContainer = {
 };
 
 export default function Stories() {
-    const testimonials = [
-        { quote: "\"I was skeptical, but hearing that little whoosh-whoosh sound for the first time... I cried. Tiny is magic.\"", author: "— Mia, 24 weeks" },
-        { quote: "\"My husband is deployed. Sending him the heartbeat recording made him feel like he was right here with us.\"", author: "— Sarah, 32 weeks" },
-        { quote: "\"The design is so calming. It doesn't feel medical; it feels like a special moment with my baby.\"", author: "— Emma, 28 weeks" }
-    ];
+    const testimonial = { 
+        quote: "\"I was skeptical, but hearing that little whoosh-whoosh sound for the first time... I cried. Tiny is magic.\"", 
+        author: "— Mia, 24 weeks" 
+    };
 
     return (
         <section id="stories" className="testimonials-section">
@@ -36,18 +35,17 @@ export default function Stories() {
                 </motion.div>
 
                 <motion.div
-                    className="testimonials-grid"
+                    className="testimonial-single-wrapper"
                     initial="initial"
                     whileInView="animate"
                     viewport={{ once: true }}
                     variants={staggerContainer}
+                    style={{ display: 'flex', justifyContent: 'center' }}
                 >
-                    {testimonials.map((t, i) => (
-                        <motion.div key={i} className="testimonial-card" variants={fadeInUp}>
-                            <div className="quote-text">{t.quote}</div>
-                            <div className="author">{t.author}</div>
-                        </motion.div>
-                    ))}
+                    <motion.div className="testimonial-card" variants={fadeInUp} style={{ maxWidth: '600px', textAlign: 'center' }}>
+                        <div className="quote-text">{testimonial.quote}</div>
+                        <div className="author" style={{ fontSize: '1.1rem' }}>{testimonial.author}</div>
+                    </motion.div>
                 </motion.div>
             </div>
         </section>

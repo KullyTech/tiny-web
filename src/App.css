@@ -403,10 +403,9 @@ h3,
 }
 
 .quote-text {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.6;
-  font-style: italic;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   margin-bottom: 1.5rem;
   color: var(--text);
 }

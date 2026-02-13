@@ -12,7 +12,7 @@ const faqs = [
     },
     {
         question: "Do I need special equipment?",
-        answer: "No! Tiny works with just your iPhone. For the best audio clarity, we highly recommend wearing AirPods or wired headphones to isolate the sound, but no extra medical devices or gels are required."
+        answer: "No! Tiny works with just your iPhone. For the best audio clarity, we highly recommend wearing AirPods or other wireless headphones to isolate the sound, but no extra medical devices or gels are required."
     },
     {
         question: "Can I share the recordings?",

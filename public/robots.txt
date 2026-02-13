@@ -2,6 +2,11 @@
 User-agent: *
 Disallow:
 
+# AI Content Signals (Cloudflare extension)
+# Note: "Unknown directive" warnings from standard validators for 'Content-signal' are expected.
+# Provides more granular control for AI training preferences.
+Content-signal: search=yes,ai-train=no
+
 # Block AI scrapers and training bots
 User-agent: GPTBot
 Disallow: /
@@ -15,6 +20,12 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
 User-agent: anthropic-ai
 Disallow: /
 
@@ -24,4 +35,14 @@ Disallow: /
 User-agent: FacebookBot
 Disallow: /
 
+User-agent: MetaExternalAgent
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
 Sitemap: https://tinymiracle.life/sitemap.xml
+
