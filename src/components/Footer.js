@@ -22,7 +22,7 @@ export default function Footer() {
                         <div className="footer-col">
                             <h4>Company</h4>
                             <Link to="/teams">Team</Link>
-                            <a href="mailto:hello@tiny.app">Contact</a>
+                            <a href="mailto:tinybymiracle@gmail.com">Contact</a>
                         </div>
                         <div className="footer-col">
                             <h4>Legal</h4>
