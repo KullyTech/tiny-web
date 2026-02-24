@@ -41,8 +41,8 @@ export default function Navbar() {
 
             <div className={`nav-links ${isOpen ? 'active' : ''}`}>
                 <button
-                    onClick={() => { 
-                        window.scrollTo({ top: 0, behavior: 'smooth' }); 
+                    onClick={() => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
                         closeMenu();
                     }}
                     style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', cursor: 'pointer', color: 'inherit' }}
@@ -52,18 +52,18 @@ export default function Navbar() {
                 <a href="#features" onClick={closeMenu}>Features</a>
                 <a href="#stories" onClick={closeMenu}>Stories</a>
                 <Link to="/teams" onClick={closeMenu}>Team</Link>
-                
+
                 {/* Mobile CTA inside menu for better spacing */}
-                <a href="https://testflight.apple.com/join/sHZ4FgyN" target="_blank" rel="noopener noreferrer" className="nav-cta mobile-only" onClick={closeMenu}>
-                    Try Beta
+                <a href="https://apps.apple.com/id/app/tiny-fetal-heartbeat/id6755379158?l=id" target="_blank" rel="noopener noreferrer" className="nav-cta mobile-only" onClick={closeMenu}>
+                    Get App
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginLeft: '6px' }}>
                         <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </a>
             </div>
 
-            <a href="https://testflight.apple.com/join/sHZ4FgyN" target="_blank" rel="noopener noreferrer" className="nav-cta desktop-only">
-                Try Beta
+            <a href="https://apps.apple.com/id/app/tiny-fetal-heartbeat/id6755379158?l=id" target="_blank" rel="noopener noreferrer" className="nav-cta desktop-only">
+                Get App
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginLeft: '6px' }}>
                     <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>

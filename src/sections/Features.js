@@ -27,8 +27,8 @@ export default function Features() {
                         <p>
                             <strong>Why?</strong> Because medical gels are messy and extra devices are expensive. Tiny listens carefully to isolate your baby's heartbeat using just your phone. Safe for daily use.
                         </p>
-                        <a href="https://testflight.apple.com/join/sHZ4FgyN" target="_blank" rel="noopener noreferrer" className="btn-text-arrow">
-                            Try Tiny Beta &rarr;
+                        <a href="https://apps.apple.com/id/app/tiny-fetal-heartbeat/id6755379158?l=id" target="_blank" rel="noopener noreferrer" className="btn-text-arrow">
+                            Get Tiny &rarr;
                         </a>
                     </div>
                     <div className="feature-visual">
@@ -48,7 +48,7 @@ export default function Features() {
                         <p>
                             <strong>Why?</strong> Because the joy of a heartbeat is meant to be shared. Record the sound and instantly send it to partners or grandparents, bridging the distance in seconds.
                         </p>
-                        <a href="https://testflight.apple.com/join/sHZ4FgyN" target="_blank" rel="noopener noreferrer" className="btn-text-arrow">
+                        <a href="https://apps.apple.com/id/app/tiny-fetal-heartbeat/id6755379158?l=id" target="_blank" rel="noopener noreferrer" className="btn-text-arrow">
                             Start Sharing &rarr;
                         </a>
                     </div>

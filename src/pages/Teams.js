@@ -51,7 +51,7 @@ function Teams() {
             <Link to="/#stories">Stories</Link>
             <Link to="/teams">Teams</Link>
           </div>
-          <a href="https://testflight.apple.com/join/sHZ4FgyN" target="_blank" rel="noopener noreferrer" className="nav-cta">Download</a>
+          <a href="https://apps.apple.com/id/app/tiny-fetal-heartbeat/id6755379158?l=id" target="_blank" rel="noopener noreferrer" className="nav-cta">Download</a>
         </nav>
         <div className="container hero-content" style={{ textAlign: 'center', display: 'block' }}>
           <div className="hero-text animate-in">
